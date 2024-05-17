@@ -19,7 +19,6 @@ def main(args):
     evaluator= Evaluator(model, tokenizer, args)
     if "dailydialog" in args.data_root:
         prompts = load_dalydialog(args.data_root)
-        prompts=prompts[:2000]
         if args.enable_streaming:
             if args.enable_token_entropy:
                 kv_cache = enable_streaming_llm(
@@ -113,7 +112,7 @@ def main(args):
     elif "rock_paper_scissors" in args.data_root:
         for domi in ["rock","paper","scissors"]:
             prompts = load_rps(args.data_root,domi=domi)
-            prompts=prompts[:2000]
+            prompts=prompts[:2000] #only play for 2000 rounds
             if args.enable_streaming:
                 if args.enable_token_entropy:
                     kv_cache = enable_streaming_llm(

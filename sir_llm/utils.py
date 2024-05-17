@@ -170,6 +170,7 @@ def load_dalydialog(file_path):
         for line in f:
             list_data_dict.append(json.loads(line))
     list_data_dict=dailydialog_dataprocessing(list_data_dict)
+    list_data_dict=list_data_dict[0:2000] #we only use 2000 samples in the paper
     return list_data_dict
 
 
