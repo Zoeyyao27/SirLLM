@@ -2,6 +2,8 @@
 
 We introduce Streaming Infinite Retentive LLM (SirLLM), which utilizes the Token Entropy metric and a memory decay mechanism to filter key phrases, endowing LLMs with both long-lasting and flexible memory.
 
+[paper link](https://arxiv.org/abs/2405.12528)
+
 ![Image text](https://github.com/Zoeyyao27/SirLLM/blob/main/image/sirllm.png)
 
 
@@ -51,5 +53,12 @@ CUDA_VISIBLE_DEVICES=0 python examples/run_streaming_llama_concate_question_new_
 💐Many thanks to [Streamllm](https://github.com/mit-han-lab/streaming-llm). Some portions of this codebase were inspired by or directly borrowed from the  [Streamllm](https://github.com/mit-han-lab/streaming-llm). Their contributions have been invaluable in the development of this project.
 
 # Citing 🎩SirLLM
-
+```
+@article{yao2024sirllm,
+  title={SirLLM: Streaming Infinite Retentive LLM},
+  author={Yao, Yao and Li, Zuchao and Zhao, Hai},
+  journal={arXiv preprint arXiv:2405.12528},
+  year={2024}
+}
+```
 
