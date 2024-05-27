@@ -6,7 +6,6 @@ import random
 import numpy as np
 from rouge import Rouge
 
-# 这个版本是直接提取模板的id，然后再past key values里面直接过滤
 
 
 def slice2d(x, start=None, end=None,id_list=None):
