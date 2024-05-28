@@ -252,7 +252,7 @@ class Evaluator:
                 choose_idx=answer_logits.index(max(answer_logits))
 
             if gold_ans_id == choose_idx:
-                print("!!correct")
+                #print("!!correct")
                 correct+=1          
 
             past_key_values=choice_past_key_values[choose_idx]
@@ -330,7 +330,7 @@ class Evaluator:
             else:
                 choose_idx=answer_logits.index(max(answer_logits))
             if gold_ans_id == choose_idx:
-                print("!!correct")
+                #print("!!correct")
                 correct+=1
 
             past_key_values=choice_past_key_values[choose_idx]
@@ -411,7 +411,7 @@ class Evaluator:
 
             choose_idx=answer_logits.index(max(answer_logits))
             if gold_ans_id == choose_idx:
-                print("!!win")
+                #print("!!win")
                 win+=1
                 last_turn_result="win"
             if choose_idx==user_choice_id:
